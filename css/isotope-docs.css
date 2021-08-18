@@ -1608,50 +1608,17 @@ you can use the generic selector below, but it's slower:
 .element-item {
   position: relative;
   float: left;
-  width: 100px;
-  height: 100px;
-  margin: 5px;
+  width: auto;
+  height: 220px;
+  margin: 15px;
   padding: 10px;
-  background: #888;
+  /* background: #888; */
   color: #262524;
 }
 
 .element-item > * {
   margin: 0;
   padding: 0;
-}
-
-.element-item .name {
-  position: absolute;
-
-  left: 10px;
-  top: 60px;
-  text-transform: none;
-  letter-spacing: 0;
-  font-size: 0.8em;
-  font-weight: normal;
-}
-
-.element-item .symbol {
-  position: absolute;
-  left: 10px;
-  top: 0px;
-  font-size: 2.8em;
-  font-weight: bold;
-  color: white;
-}
-
-.element-item .number {
-  position: absolute;
-  right: 8px;
-  top: 5px;
-}
-
-.element-item .weight {
-  position: absolute;
-  left: 10px;
-  top: 76px;
-  font-size: 0.8em;
 }
 
 .element-item.alkali          { background: #F00; background: hsl(   0, 100%, 50%); }
