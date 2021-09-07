@@ -1568,28 +1568,29 @@ you can use the generic selector below, but it's slower:
 .container {
   margin-left: 10px;
   margin-right: 10px;
-  max-width: 1200px;
+  /* max-width: 1200px; */
 }
 
-.main .container > * {
+/* .main .container > * {
   max-width: 700px;
-}
+} */
 
-.main .container .go-wide,
+/* .main .container .go-wide,
 .main .container .example {
   max-width: none;
-}
+} */
 
 /* tablet-ish */
 @media screen and ( min-width: 768px ) {
 
   .container {
-    margin-left: 220px;
+    margin-left: 5%;
+    margin-left: 5%;
   }
 
-  .main .container > * {
+/*   .main .container > * {
     max-width: 900px;
-  }
+  } */
 
 }
 
@@ -1607,18 +1608,40 @@ you can use the generic selector below, but it's slower:
 
 .element-item {
   position: relative;
-  float: left;
+  /* float: left; */
   width: auto;
-  height: 220px;
-  margin: 15px;
-  padding: 10px;
+  height: 320px;
+/*   margin: 15px;
+  padding: 10px; */
   /* background: #888; */
   color: #262524;
+  border: 3px solid #333;
+  border-color: hsla(0, 0%, 0%, 0.7);
+  cursor:zoom-in;
+}
+
+.element-item:hover {
+  border-color: hsla(34, 100%, 93%, 0.7);
 }
 
 .element-item > * {
   margin: 0;
   padding: 0;
+}
+
+.w3-modal{
+  position: fixed;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.68);
+  padding: 3%;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.w3-modal-content{
+  display: flex;
+  height: -webkit-fill-available;
+  justify-content: center;
 }
 
 .element-item.alkali          { background: #F00; background: hsl(   0, 100%, 50%); }
@@ -1831,8 +1854,8 @@ you can use the generic selector below, but it's slower:
 ------------------------- */
 
 .grid {
-  border: 2px solid #484542;
-  background: hsla(0, 0%, 0%, 0.15);
+/*   border: 2px solid #484542;
+  background: hsla(0, 0%, 0%, 0.15); */
   position: relative;
 }
 

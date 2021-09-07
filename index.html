@@ -20,6 +20,12 @@
 </head>
 <body class="page--filtering">
 
+  <div id="modal01" class="w3-modal" onclick="this.style.display='none'" style="display: none;">
+    <div class="w3-modal-content w3-animate-zoom">
+      <img id="img01" src="img/portraits/1.jpg">
+    </div>
+  </div>
+
 
 <!--   <div class="nav">
     <h1 class="nav__title"><a href=".">Isotope</a></h1>
@@ -102,129 +108,135 @@
   <div class="grid">
       <!-- portraits -->
       <div class="element-item portraits " data-category="portraits">
-        <img src="img/portraits/1.jpg">
+        <img src="img/portraits/1.jpg" onclick="enlarge(this)">
+      </div>
+      <div class="element-item realestate " data-category="realestate">
+        <img src="img/realestate/6.jpg" onclick="enlarge(this)">
+      </div>
+      <div class="element-item music " data-category="music">
+        <img src="img/music/4.jpg" onclick="enlarge(this)">
       </div>
       <div class="element-item portraits " data-category="portraits">
-        <img src="img/portraits/2.jpg">
+        <img src="img/portraits/4.jpg" onclick="enlarge(this)">
       </div>
       <div class="element-item portraits " data-category="portraits">
-        <img src="img/portraits/3.jpg">
+        <img src="img/portraits/5.jpg" onclick="enlarge(this)">
+      </div>
+      <div class="element-item music " data-category="music">
+        <img src="img/music/6.jpg" onclick="enlarge(this)">
       </div>
       <div class="element-item portraits " data-category="portraits">
-        <img src="img/portraits/4.jpg">
+        <img src="img/portraits/6.jpg" onclick="enlarge(this)">
+      </div>
+      <div class="element-item products " data-category="products">
+        <img src="img/products/3.jpg" onclick="enlarge(this)">
       </div>
       <div class="element-item portraits " data-category="portraits">
-        <img src="img/portraits/5.jpg">
+        <img src="img/portraits/7.jpg" onclick="enlarge(this)">
+      </div>
+      <div class="element-item food " data-category="food">
+        <img src="img/food/5.jpg" onclick="enlarge(this)">
       </div>
       <div class="element-item portraits " data-category="portraits">
-        <img src="img/portraits/6.jpg">
-      </div>
-      <div class="element-item portraits " data-category="portraits">
-        <img src="img/portraits/7.jpg">
-      </div>
-      <div class="element-item portraits " data-category="portraits">
-        <img src="img/portraits/8.jpg">
-      </div>
-      <div class="element-item portraits " data-category="portraits">
-        <img src="img/portraits/9.jpg">
-      </div>
-      <div class="element-item portraits " data-category="portraits">
-        <img src="img/portraits/10.jpg">
+        <img src="img/portraits/10.jpg" onclick="enlarge(this)">
       </div>
       <!-- foods -->
       <div class="element-item food " data-category="food">
-        <img src="img/food/1.jpg">
+        <img src="img/food/1.jpg" onclick="enlarge(this)">
+      </div>
+      <div class="element-item portraits " data-category="portraits">
+        <img src="img/portraits/2.jpg" onclick="enlarge(this)">
+      </div>
+      <div class="element-item music " data-category="music">
+        <img src="img/music/8.jpg" onclick="enlarge(this)">
       </div>
       <div class="element-item food " data-category="food">
-        <img src="img/food/2.jpg">
+        <img src="img/food/3.jpg" onclick="enlarge(this)">
       </div>
       <div class="element-item food " data-category="food">
-        <img src="img/food/3.jpg">
+        <img src="img/food/4.jpg" onclick="enlarge(this)">
+      </div>
+
+      <div class="element-item realestate " data-category="realestate">
+        <img src="img/realestate/2.jpg" onclick="enlarge(this)">
       </div>
       <div class="element-item food " data-category="food">
-        <img src="img/food/4.jpg">
+        <img src="img/food/6.jpg" onclick="enlarge(this)">
       </div>
       <div class="element-item food " data-category="food">
-        <img src="img/food/5.jpg">
-      </div>
-      <div class="element-item food " data-category="food">
-        <img src="img/food/6.jpg">
-      </div>
-      <div class="element-item food " data-category="food">
-        <img src="img/food/7.jpg">
+        <img src="img/food/7.jpg" onclick="enlarge(this)">
       </div>
       <!-- music -->
       <div class="element-item music " data-category="music">
-        <img src="img/music/1.jpg">
+        <img src="img/music/1.jpg" onclick="enlarge(this)">
+      </div>
+      <div class="element-item food " data-category="food">
+        <img src="img/food/2.jpg" onclick="enlarge(this)">
+      </div>
+
+      <div class="element-item music " data-category="music">
+        <img src="img/music/3.jpg" onclick="enlarge(this)">
+      </div>
+      <div class="element-item products " data-category="products">
+        <img src="img/products/6.jpg" onclick="enlarge(this)">
       </div>
       <div class="element-item music " data-category="music">
-        <img src="img/music/2.jpg">
+        <img src="img/music/5.jpg" onclick="enlarge(this)">
+      </div>
+      <div class="element-item portraits " data-category="portraits">
+        <img src="img/portraits/9.jpg" onclick="enlarge(this)">
       </div>
       <div class="element-item music " data-category="music">
-        <img src="img/music/3.jpg">
+        <img src="img/music/7.jpg" onclick="enlarge(this)">
+      </div>
+      <div class="element-item realestate " data-category="realestate">
+        <img src="img/realestate/1.jpg" onclick="enlarge(this)">
       </div>
       <div class="element-item music " data-category="music">
-        <img src="img/music/4.jpg">
-      </div>
-      <div class="element-item music " data-category="music">
-        <img src="img/music/5.jpg">
-      </div>
-      <div class="element-item music " data-category="music">
-        <img src="img/music/6.jpg">
-      </div>
-      <div class="element-item music " data-category="music">
-        <img src="img/music/7.jpg">
-      </div>
-      <div class="element-item music " data-category="music">
-        <img src="img/music/8.jpg">
-      </div>
-      <div class="element-item music " data-category="music">
-        <img src="img/music/9.jpg">
-      </div>
-      <div class="element-item music " data-category="music">
-        <img src="img/music/10.jpg">
+        <img src="img/music/10.jpg" onclick="enlarge(this)">
       </div>
       <!-- music -->
       <div class="element-item products " data-category="products">
-        <img src="img/products/1.jpg">
+        <img src="img/products/1.jpg" onclick="enlarge(this)">
+      </div>
+      <div class="element-item music " data-category="music">
+        <img src="img/music/2.jpg" onclick="enlarge(this)">
+      </div>
+      <div class="element-item portraits " data-category="portraits">
+        <img src="img/portraits/3.jpg" onclick="enlarge(this)">
+      </div>
+
+      <div class="element-item products " data-category="products">
+        <img src="img/products/4.jpg" onclick="enlarge(this)">
       </div>
       <div class="element-item products " data-category="products">
-        <img src="img/products/2.jpg">
+        <img src="img/products/5.jpg" onclick="enlarge(this)">
       </div>
+
       <div class="element-item products " data-category="products">
-        <img src="img/products/3.jpg">
-      </div>
-      <div class="element-item products " data-category="products">
-        <img src="img/products/4.jpg">
-      </div>
-      <div class="element-item products " data-category="products">
-        <img src="img/products/5.jpg">
-      </div>
-      <div class="element-item products " data-category="products">
-        <img src="img/products/6.jpg">
-      </div>
-      <div class="element-item products " data-category="products">
-        <img src="img/products/7.jpg">
+        <img src="img/products/7.jpg" onclick="enlarge(this)">
       </div>
       <!-- realestate -->
-      <div class="element-item realestate " data-category="realestate">
-        <img src="img/realestate/1.jpg">
+
+      <div class="element-item products " data-category="products">
+        <img src="img/products/2.jpg" onclick="enlarge(this)">
       </div>
       <div class="element-item realestate " data-category="realestate">
-        <img src="img/realestate/2.jpg">
+        <img src="img/realestate/3.jpg" onclick="enlarge(this)">
+      </div>
+      <div class="element-item portraits " data-category="portraits">
+        <img src="img/portraits/8.jpg" onclick="enlarge(this)">
       </div>
       <div class="element-item realestate " data-category="realestate">
-        <img src="img/realestate/3.jpg">
+        <img src="img/realestate/4.jpg" onclick="enlarge(this)">
+      </div>
+      <div class="element-item music " data-category="music">
+        <img src="img/music/9.jpg" onclick="enlarge(this)">
       </div>
       <div class="element-item realestate " data-category="realestate">
-        <img src="img/realestate/4.jpg">
+        <img src="img/realestate/5.jpg" onclick="enlarge(this)">
       </div>
-      <div class="element-item realestate " data-category="realestate">
-        <img src="img/realestate/5.jpg">
-      </div>
-      <div class="element-item realestate " data-category="realestate">
-        <img src="img/realestate/6.jpg">
-      </div>
+
   </div>
 
 <!--   <p class="edit-demo">
@@ -782,6 +794,7 @@ $( <span class="function"><span class="keyword">function</span>(<span class="par
 <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
 
   <script src="js/isotope-docs.min.js?6"></script>
+  <script src="js/image-enlarge.js"></script>
 
 
 </body>
