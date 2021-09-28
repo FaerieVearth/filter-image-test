@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width">
   <meta name="description" content="Filter &amp; sort magical layouts">
 
-  <title>Isotope &#xB7; Filtering</title>
+  <title>Jan Rozman &#xB7; Portfolio</title>
 
     <!-- Isotope does not require any CSS files -->
     <link rel="stylesheet" href="css/isotope-docs.css?6" media="screen">
@@ -20,9 +20,13 @@
 </head>
 <body class="page--filtering">
 
-  <div id="modal01" class="w3-modal" onclick="this.style.display='none'" style="display: none;">
-    <div class="w3-modal-content w3-animate-zoom">
-      <img id="img01" src="img/portraits/1.jpg">
+  <div id="modal01" class="w3-modal" style="display: none;">
+    <div class="w3-modal-content" onclick="closeModal()">
+      <img id="img01">
+    </div>
+    <div class="modal-nav-container">
+      <a class="modal-back" onclick="goBackImg()">❮back</a>
+      <a class="modal-forward" onclick="goNextImg()">next❯</a>
     </div>
   </div>
 
