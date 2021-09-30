@@ -1,4 +1,9 @@
 //Enlarges the image
+
+$(document).ready(function() {
+    console.log("finish load");
+});
+
 let currentSelection;
 
 function enlarge(element) {
@@ -85,6 +90,7 @@ function handleGesture() {
     goBackImg();
   } 
   if (touchendX > touchstartX + 30){
+    console.log("right swipe");
     goNextImg();
   }
 }
@@ -97,3 +103,7 @@ slider.addEventListener('touchend', e => {
   touchendX = e.changedTouches[0].screenX;
   handleGesture();
 })
+
+function openSite(url){
+    window.open(url, '_blank');
+  }

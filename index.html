@@ -4,98 +4,83 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <meta name="description" content="Filter &amp; sort magical layouts">
-
+    
   <title>Jan Rozman &#xB7; Portfolio</title>
 
     <!-- Isotope does not require any CSS files -->
     <link rel="stylesheet" href="css/isotope-docs.css?6" media="screen">
     <link rel="stylesheet" href="css/style.css" media="screen">
 
-<!--   <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="@metafizzyco">
-  <meta name="twitter:url" content="https://isotope.metafizzy.co/filtering.html">
-  <meta name="twitter:title" content="Isotope Filtering">
-  <meta name="twitter:description" content="Filter &amp; sort magical layouts"> -->
-
 </head>
 <body class="page--filtering">
 
-  <div id="modal01" class="w3-modal" style="display: none;">
-    <div class="w3-modal-content" onclick="closeModal()">
-      <img id="img01">
-    </div>
-    <div class="modal-nav-container">
-      <a class="modal-back" onclick="goBackImg()">❮back</a>
-      <a class="modal-forward" onclick="goNextImg()">next❯</a>
-    </div>
-  </div>
-
-
-<!--   <div class="nav">
-    <h1 class="nav__title"><a href=".">Isotope</a></h1>
-  
-    <ol class="site-nav">
-      <li class="site-nav__item site-nav__item--filtering">
-        <a class="site-nav__item__link" href="filtering.html">Filtering</a></li>
-      <li class="site-nav__item site-nav__item--sorting">
-        <a class="site-nav__item__link" href="sorting.html">Sorting</a></li>
-      <li class="site-nav__item site-nav__item--layout ">
-        <a class="site-nav__item__link" href="layout.html">Layout</a>
-      </li>
-      <li class="site-nav__item site-nav__item--layout-modes sub-nav-parent">
-        <a class="site-nav__item__link" href="layout-modes.html">Layout modes</a>
-        <ul class="sub-nav">
-            <li class="sub-nav__item sub-nav__item--masonry">
-              <a class="sub-nav__item__link" href="layout-modes/masonry.html">masonry</a></li>
-            <li class="sub-nav__item sub-nav__item--fitrows">
-              <a class="sub-nav__item__link" href="layout-modes/fitrows.html">fitRows</a></li>
-            <li class="sub-nav__item sub-nav__item--vertical">
-              <a class="sub-nav__item__link" href="layout-modes/vertical.html">vertical</a></li>
-            <li class="sub-nav__item sub-nav__item--packery">
-              <a class="sub-nav__item__link" href="layout-modes/packery.html">packery</a></li>
-            <li class="sub-nav__item sub-nav__item--cellsbyrow">
-              <a class="sub-nav__item__link" href="layout-modes/cellsbyrow.html">cellsByRow</a></li>
-            <li class="sub-nav__item sub-nav__item--masonryhorizontal">
-              <a class="sub-nav__item__link" href="layout-modes/masonryhorizontal.html">masonryHorizontal</a></li>
-            <li class="sub-nav__item sub-nav__item--fitcolumns">
-              <a class="sub-nav__item__link" href="layout-modes/fitcolumns.html">fitColumns</a></li>
-            <li class="sub-nav__item sub-nav__item--cellsbycolumn">
-              <a class="sub-nav__item__link" href="layout-modes/cellsbycolumn.html">cellsByColumn</a></li>
-            <li class="sub-nav__item sub-nav__item--horiz">
-              <a class="sub-nav__item__link" href="layout-modes/horiz.html">horiz</a></li>
-        </ul>
-      </li>
-      <li class="site-nav__item site-nav__item--options">
-        <a class="site-nav__item__link" href="options.html">Options</a></li>
-      <li class="site-nav__item site-nav__item--methods">
-        <a class="site-nav__item__link" href="methods.html">Methods</a></li>
-      <li class="site-nav__item site-nav__item--events">
-        <a class="site-nav__item__link" href="events.html">Events</a></li>
-      <li class="site-nav__item site-nav__item--extras">
-        <a class="site-nav__item__link" href="extras.html">Extras</a></li>
-      <li class="site-nav__item site-nav__item--license">
-        <a class="site-nav__item__link" href="license.html">License</a></li>
-      <li class="site-nav__item site-nav__item--faq">
-        <a class="site-nav__item__link" href="faq.html">FAQ</a></li>
-    </ol>
-  
-    <ul class="page-nav" data-js="page-nav">
-<li class="page-nav__item page-nav__item--h2"><a href="#selectors">Selectors</a></li>
-<li class="page-nav__item page-nav__item--h3"><a href="#jquery-selectors">jQuery selectors</a></li>
-<li class="page-nav__item page-nav__item--h2"><a href="#functions">Functions</a></li>
-<li class="page-nav__item page-nav__item--h2"><a href="#ui">UI</a></li>
-<li class="page-nav__item page-nav__item--h3"><a href="#filter-functions">Filter functions</a></li>
-<li class="page-nav__item page-nav__item--h3"><a href="#other-ui">Other UI</a></li>
-<li class="page-nav__item page-nav__item--h2"><a href="#combination-filters">Combination filters</a></li>
-<li class="page-nav__item page-nav__item--h3"><a href="#combination-filters-ui">Combination filters UI</a></li>
-<li class="page-nav__item page-nav__item--h2"><a href="#url-hash">URL hash</a></li>
-</ul>
-  </div> -->
 
 
   <div id="content" class="main">
+
+    <div id="modal01" class="w3-modal" style="display: none;">
+      <div class="w3-modal-content" onclick="closeModal()">
+        <img id="img01">
+      </div>
+      <div class="modal-nav-container">
+        <a class="modal-back" onclick="goBackImg()">❮back</a>
+        <a class="modal-forward" onclick="goNextImg()">next❯</a>
+      </div>
+    </div>
+
     <div class="container">
-        <h1>Gallery</h1>
+        <div class="portfolio-grid">
+          <div class="featured-image-container">
+            <img class="featured-image" src="img/janrozman.jpg">
+          </div>
+          <div class="portfolio-info">
+            <div style="left: 50%; background-color: beige; padding: 20px">
+              <img src="img/icons/claritystLogo.png" class="logo-icon">
+            </div>
+            <p>
+              Hi my name is Jan
+            </p>
+            <p>
+              WELCOME TO MY PERSONAL WEB PORFOLIO
+            </p>
+            <P>
+              What fuels me is capturing interesting moments that happen around us. Weather it is a one in a life time occasion or just common day to day stuff every moent can be made great and is in a way, worth keeping...
+            </P>
+            <p>
+              Equipment
+              Camera
+              - Canon eos r5
+              Strobes
+              - Quadralite ad600 pro
+              - Quadralite stroboss 60 basic
+              Lenses
+              - Canon ef 16-35mm f/2.8l usm ii
+              - Sigma art 50mm f/1.4
+              - Sigma 70-200mm f/2.8
+              Gimbal
+              - DJI RSC 2 gimbal
+              Tripod
+              - 2x Godox 260T 260cm Air
+              - Manfrotto MK290
+              Softbox
+              - Quadralite hexadecagon 90cm
+              - Aputure ligh dome mini II
+            </p>
+
+            <p>CONTOCT
+              Jan Rozman
+              +38641519414
+              Rozman.jan00@gmail.com
+            </p>
+            <div style="height: -webkit-fill-available; width: aut-webkit-fill-availableo; background-color: beige; flex-direction: column; padding-top: 20px; display: flex;">
+              <div class="socialMediaFixed">
+                <img class="logo-sm" src="img/icons/iglogo.png" onclick="openSite('https://www.instagram.com/clarityst/')">
+                <img class="logo-sm" src="img/icons/fblogo.png" onclick="openSite('https://www.facebook.com/Clarityst-111557937087687/')">
+                <img class="logo-sm" src="img/icons/gmaillogo.png" onclick="openSite('mailto:Rozman.jan00@gmail.com')">
+              </div>
+            </div>
+          </div>
+        </div>
 
 <div class="big-demo go-wide" data-js="filtering-demo">
   <div class="filter-button-group button-group js-radio-button-group">
@@ -107,7 +92,6 @@
     <button class="button" data-filter=".realestate">realestate</button>
   </div>
 
-  <!-- <pre class="code-display"><code>$grid.isotope({...})</code></pre> -->
 
   <div id="grid" class="grid">
       <!-- portraits -->
@@ -247,8 +231,8 @@
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
 
-  <script src="js/isotope-docs.min.js?6"></script>
-  <script src="js/image-enlarge.js"></script>
+<script src="js/isotope-docs.min.js?6"></script>
+<script src="js/image-enlarge.js"></script>
 
 
 </body>
