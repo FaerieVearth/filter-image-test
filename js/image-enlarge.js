@@ -1,12 +1,5 @@
 //Enlarges the image
 
-$(document).ready(function() {
-    var el = document.getElementById("grid");
-    var event = document.createEvent('HTMLEvents');
-    event.initEvent('resize', true, false);
-    el.dispatchEvent(event);
-});
-
 let currentSelection;
 
 function enlarge(element) {

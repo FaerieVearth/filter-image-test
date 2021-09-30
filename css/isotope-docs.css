@@ -522,7 +522,8 @@ a:hover code {
   position: relative;
   margin: 3px;
   /* float: left; */
-  width: auto;
+  min-width: 200px;
+  width: max-content;
   height: 300px;
 /*   margin: 15px;
   padding: 10px; */
