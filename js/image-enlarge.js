@@ -1,7 +1,10 @@
 //Enlarges the image
 
 $(document).ready(function() {
-    console.log("finish load");
+    var el = document.getElementById("grid");
+    var event = document.createEvent('HTMLEvents');
+    event.initEvent('resize', true, false);
+    el.dispatchEvent(event);
 });
 
 let currentSelection;
