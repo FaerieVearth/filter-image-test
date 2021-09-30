@@ -1,5 +1,11 @@
 //Enlarges the image
 
+$(document).ready(function() {
+    var el = document.getElementById("grid");
+    el.style.visibility = "visible";
+    
+});
+
 let currentSelection;
 
 function enlarge(element) {
