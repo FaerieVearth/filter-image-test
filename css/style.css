@@ -65,3 +65,31 @@ img {
 #grid {
   visibility: hidden;
 }
+
+@media screen and ( max-width: 830px ) {
+
+  .featured-image {
+    display: none;
+  }
+
+  .portfolio-info {
+    display: block;
+    width: -webkit-fill-available;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .element-item {
+    height: 180px;
+    min-width: none;
+  }
+
+  .button {
+    padding: 0px;
+  }
+
+  .modal-nav-container {
+    display: none;
+  }
+
+}
