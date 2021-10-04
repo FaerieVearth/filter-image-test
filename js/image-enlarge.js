@@ -42,8 +42,7 @@ function checkKey(e) {
 
 function goNextImg(){
     var visibleBox = [];
-
-        $.each($("img"), function(){ 
+        $.each($(".gallery"), function(){ 
             if($(this).is(":hidden")) {
                 return;
             }else{
@@ -62,7 +61,7 @@ function goNextImg(){
 function goBackImg(){
     var visibleBox = [];
 
-        $.each($("img"), function(){ 
+        $.each($(".gallery"), function(){ 
             if($(this).is(":hidden")) {
                 return;
             }else{
