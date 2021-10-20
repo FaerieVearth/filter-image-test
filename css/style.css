@@ -1,7 +1,44 @@
+/*
+color pallete 
+#000000
+#0f1427
+#eedfca
+#ab1401
+#ffffff
+
+
+#2b2b2b
+#a6a6a6
+#a5c0dd
+#b43838
+#eedfca
+*/
+
+:root {
+  --blackjr: #131312;
+  --darkjr: #2b2b2b;
+  --grayjr: #a6a6a6; 
+  --bluejr: #999da1;
+  --redjr: #b43838; 
+  --beigejr: #eedfca;
+}
+
+.main {
+  background-color: var(--blackjr);
+}
+
+.page--filtering {
+  background-color: var(--blackjr);
+}
+
 img {
   height: -webkit-fill-available;
 }
 
+.distortion {
+  width: 580px;
+  height: 750px;
+}
 
 .modal-back {
   cursor: pointer;
@@ -25,14 +62,6 @@ img {
   padding-top: 2%;
   display: flex;
   justify-content: center;
-}
-
-.featured-image-container {
-  height: 80vh;
-}
-
-.featured-image {
-  width: -webkit-fill-available;
 }
 
 .portfolio-info {
@@ -68,7 +97,7 @@ img {
 
 @media screen and ( max-width: 830px ) {
 
-  .featured-image {
+  .distortion {
     display: none;
   }
 

@@ -1,3 +1,11 @@
+:root {
+  --darkjr: #2b2b2b;
+  --grayjr: #a6a6a6; 
+  --bluejr: #a5c0dd;
+  --redjr: #b43838; 
+  --beigejr: #eedfca;
+}
+
 html {
   font-family: sans-serif; /* 1 */
   line-height: 1.15; /* 2 */
@@ -44,15 +52,6 @@ dfn {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
-}
-
-/**
- * Add the correct background and color in IE 9-.
- */
-
-mark {
-  background-color: #ff0;
-  color: #000;
 }
 
 /**
@@ -300,7 +299,7 @@ textarea {
   display: inline-block;
   padding: 5px 25px;
   margin-bottom: 10px;
-  background-color: #F8F8F8;
+  background-color: var(--grayjr);
   background-image: linear-gradient( hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.1) );
   border: 1px solid #CCC;
   border-radius: 5px;
@@ -311,12 +310,12 @@ textarea {
 }
 
 .button:enabled:hover {
-  background-color: #8CF;
+  background-color: var(--bluejr);
 }
 
 .button.is-checked,
 .button.is-selected {
-  background-color: #19F;
+  background-color: var(--bluejr);
   color: white;
 }
 
@@ -383,27 +382,8 @@ html.export {
 }
 
 body {
-  color: #EEE;
-  background: #262524;
-}
-
-/* ---- links ---- */
-
-a,
-a code {
-  color: #FB4;
-  text-decoration: none;
-}
-
-a:hover,
-a:hover code {
-  color: #4BF;
-}
-
-a:active,
-a:active code {
-  color: #1FB;
-  background: #161615;
+  color: var(--grayjr);
+  background: var(--blackjr);
 }
 
 
@@ -411,49 +391,6 @@ a:active code {
 
 ul, ol {
   padding-left: 1.8em;
-}
-
-/* ---- code ---- */
-
-pre, code {
-  font-family: Consolas, Menlo, monospace;
-  font-size: 14px;
-  background: #161615;
-  color: white;
-}
-
-pre {
-  padding: 0.8em;
-  border-radius: 5px;
-  white-space: pre-wrap;
-}
-
-code {
-  padding: 0.2em 0.3em;
-  line-height: 1.2;
-  border-radius: 3px;
-}
-
-pre code {
-  padding: 0;
-  line-height: 1.5;
-  background: none;
-}
-
-a code {
-  background: #A2C;
-  color: white;
-}
-
-a:hover code {
-  color: white;
-  background: #D26;
-}
-
-.clearfix:after {
-  content: '';
-  clear: both;
-  display: block;
 }
 
 
@@ -509,14 +446,14 @@ a:hover code {
   margin: 3px;
   width: max-content;
   height: 300px;
-  color: #262524;
+  color: var(--grayjr);
   border: 3px solid #333;
   border-color: hsla(0, 0%, 0%, 0.7);
   cursor:zoom-in;
 }
 
 .element-item:hover {
-  border-color: hsla(34, 100%, 93%, 0.7);
+  border-color: var(--bluejr);
 }
 
 .element-item > * {
