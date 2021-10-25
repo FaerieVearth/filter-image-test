@@ -1,7 +1,7 @@
 :root {
   --darkjr: #2b2b2b;
   --grayjr: #a6a6a6; 
-  --bluejr: #a5c0dd;
+  --bluejr: #5e8fc4;
   --redjr: #b43838; 
   --beigejr: #eedfca;
 }
@@ -295,22 +295,8 @@ textarea {
 /* button
 ------------------------- */
 
-.button {
-  display: inline-block;
-  padding: 5px 25px;
-  margin-bottom: 10px;
-  background-color: var(--grayjr);
-  background-image: linear-gradient( hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.1) );
-  border: 1px solid #CCC;
-  border-radius: 5px;
-}
-
 .button:enabled {
   cursor: pointer;
-}
-
-.button:enabled:hover {
-  background-color: var(--bluejr);
 }
 
 .button.is-checked,
@@ -320,9 +306,9 @@ textarea {
 }
 
 .button:active {
-  color: white;
-  background-color: #59F;
-  box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
+  border-style: solid;
+  border-color: var(--bluejr);
+  border-width: 3px;
 }
 
 /* hide radio inputs */
@@ -337,9 +323,18 @@ textarea {
 }
 
 .button-group .button {
+  color: var(--grayjr);
   float: left;
   border-radius: 0;
-  margin-left: -1px;
+  margin-left: 3px;
+  padding: 3px;
+  margin-right: 3px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
 }
 
 

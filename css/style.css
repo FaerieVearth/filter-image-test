@@ -18,7 +18,7 @@ color pallete
   --blackjr: #131312;
   --darkjr: #2b2b2b;
   --grayjr: #a6a6a6; 
-  --bluejr: #999da1;
+  --bluejr: #5487b9;
   --redjr: #b43838; 
   --beigejr: #eedfca;
 }
@@ -74,13 +74,14 @@ img {
 
 .logo-icon {
   height: 170px;
-  width: 170px;
+  width: auto;
 }
 
 .filter-button-group {
   margin-top: 34px;
   margin-bottom: 14px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -119,6 +120,12 @@ img {
   width: -webkit-fill-available;
 }
 
+.button.is-checked,
+.button.is-selected {
+  background-color: var(--redjr);
+  color: white;
+}
+
 @media screen and ( max-width: 830px ) {
 
   .distortion {
@@ -144,5 +151,15 @@ img {
   .modal-nav-container {
     display: none;
   }
+
+  .play-video-icon {
+    font-size: small;
+  }
+  
+  .close-video-icon {
+    font-size: medium;
+    bottom: 15%;
+  }
+  
 
 }
