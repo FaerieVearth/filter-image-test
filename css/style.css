@@ -96,7 +96,27 @@ img {
 }
 
 .video {
-  height: fit-content;
+  cursor: default !important;
+}
+
+.play-video-icon {
+  position: absolute;
+  left: 45%;
+  bottom: 0%;
+  font-size: larger;
+  cursor: pointer;
+}
+
+.close-video-icon {
+  position: absolute;
+  left: 45%;
+  bottom: 0%;
+  font-size: xx-large;
+  cursor: pointer;
+}
+
+.content2_videoFrame {
+  width: -webkit-fill-available;
 }
 
 @media screen and ( max-width: 830px ) {

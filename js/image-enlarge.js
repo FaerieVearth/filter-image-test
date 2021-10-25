@@ -7,11 +7,19 @@ $(document).ready(function() {
 });
 
 let currentSelection;
+let VisibleBox;
 
 function enlarge(element) {
     currentSelection = element;
     document.getElementById("img01").src = element.src;
     document.getElementById("modal01").style.display = "block";
+    fillVisibleBox();
+}
+
+function enlargeVideo(link) {
+    console.log("enlarge video");
+    document.getElementById("iframe-video").src = "https://www.youtube.com/embed/" + link;
+    document.getElementById("modal02").style.display = "block";
 }
 
 
@@ -24,6 +32,7 @@ function checkKey(e) {
     if (e.keyCode == '27') {
         console.log("esc");
         document.getElementById("modal01").style.display = "none";
+        document.getElementById("modal02").style.display = "none";
         return;
     }
 
@@ -31,54 +40,59 @@ function checkKey(e) {
         console.log("not in modal ret");
         return;
     }
-    else if (e.keyCode == '37') {
+    else if (e.keyCode == '39') {
         goNextImg();
     }
-    else if (e.keyCode == '39') {
+    else if (e.keyCode == '37') {
         goBackImg();
     }
 
 }
 
-function goNextImg(){
-    var visibleBox = [];
-        $.each($(".gallery"), function(){ 
-            if($(this).is(":hidden")) {
-                return;
-            }else{
-                visibleBox.push(this);
-            }
-        });
-        if(visibleBox.indexOf(currentSelection) == 1){
-            document.getElementById("img01").src = visibleBox[visibleBox.length-1].src;
-            currentSelection = visibleBox[visibleBox.length-1];
+
+
+function fillVisibleBox(){
+    visibleBox = [];
+    $.each($(".gallery"), function(){ 
+        if($(this).is(":hidden")) {
+            return;
         }else{
-            document.getElementById("img01").src = visibleBox[visibleBox.indexOf(currentSelection) -1].src;
-            currentSelection = visibleBox[visibleBox.indexOf(currentSelection) -1];
+            visibleBox.push(this);
         }
+    });
+}
+
+function goNextImg(){
+    if(visibleBox.indexOf(currentSelection) == visibleBox.length-1){
+        document.getElementById("img01").src = visibleBox[0].src;
+        currentSelection = visibleBox[0];
+    }else{
+        document.getElementById("img01").src = visibleBox[visibleBox.indexOf(currentSelection) +1].src;
+        currentSelection = visibleBox[visibleBox.indexOf(currentSelection) +1];
+    }
 }
 
 function goBackImg(){
-    var visibleBox = [];
-
-        $.each($(".gallery"), function(){ 
-            if($(this).is(":hidden")) {
-                return;
-            }else{
-                visibleBox.push(this);
-            }
-        });
-        if(visibleBox.indexOf(currentSelection) == visibleBox.length-1){
-            document.getElementById("img01").src = visibleBox[1].src;
-            currentSelection = visibleBox[1];
-        }else{
-            document.getElementById("img01").src = visibleBox[visibleBox.indexOf(currentSelection) +1].src;
-            currentSelection = visibleBox[visibleBox.indexOf(currentSelection) +1];
-        }
+    if(visibleBox.indexOf(currentSelection) == 0){
+        document.getElementById("img01").src = visibleBox[visibleBox.length-1].src;
+        currentSelection = visibleBox[visibleBox.length-1];
+    }else{
+        document.getElementById("img01").src = visibleBox[visibleBox.indexOf(currentSelection) -1].src;
+        currentSelection = visibleBox[visibleBox.indexOf(currentSelection) -1];
+    }
 }
 
 function closeModal(){
     document.getElementById("modal01").style.display = "none";
+    document.getElementById("modal02").style.display = "none";
+}
+
+function closeVideo(){
+    closeModal();
+    $("iframe").each(function() { 
+        var src= $(this).attr('src');
+        $(this).attr('src',src);  
+    });
 }
 
 let touchstartX = 0;
