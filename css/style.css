@@ -126,7 +126,7 @@ img {
   color: white;
 }
 
-@media screen and ( max-width: 830px ) {
+@media screen and ( max-width: 1284px ) {
 
   .distortion {
     display: none;

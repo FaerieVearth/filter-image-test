@@ -458,7 +458,6 @@ ul, ol {
 
 .w3-modal{
   position: fixed;
-  position: fixed;
   background: rgba(0, 0, 0, 0.68);
   padding: 3%;
   width: 100%;
@@ -470,6 +469,24 @@ ul, ol {
   height: -webkit-fill-available;
   justify-content: center;
 }
+
+@media screen and ( max-width: 1284px ) {
+  .w3-modal-content{
+    position: absolute;
+    display: flex;
+    height: auto;
+    width: -webkit-fill-available;
+    justify-content: center;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .w3-modal-content > img{
+    width: -webkit-fill-available;
+  }
+
+}
+
 
 
 
