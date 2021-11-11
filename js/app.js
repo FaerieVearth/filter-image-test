@@ -9,3 +9,17 @@ new hoverEffect({
     imagesRatio: 5 / 4,
     displacementImage: './img/heightMap.png'
 })
+/* 
+var $grid = $('.grid').isotope({
+    layoutMode: 'fir-rows'
+  }) */
+
+  $('.grid').isotope({
+    // set itemSelector so .grid-sizer is not used in layout
+    itemSelector: '.grid-item',
+    percentPosition: true,
+    masonry: {
+      // set to the element
+      columnWidth: '.grid-sizer'
+    }
+  })
