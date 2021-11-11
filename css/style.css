@@ -278,6 +278,14 @@ li {
   cursor:zoom-in;
 }
 
+.wide-element-item {
+  min-width: 28%;
+}
+
+.narrow-element-item {
+ min-width: 12%; 
+}
+
 .element-item:hover {
   border-color: var(--bluejr);
 }
