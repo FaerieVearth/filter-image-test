@@ -315,6 +315,10 @@ li {
     left: 0;
   }
 
+  .modal-nav-container {
+    display: none;
+  }
+
   .distortion {
     display: none;
   }
@@ -326,9 +330,17 @@ li {
   .mobile-divider {
     display: block;
   }
+
+  .portfolio-info {
+    font-size: 1.3rem;
+  }
+
+  .welcome-text {
+    font-size: 2rem;
+  }
 }
 
-@media screen and ( max-width: 768px ) {
+@media screen and ( max-width: 767px ) {
   .w3-modal{
     position: fixed;
     display: block;
