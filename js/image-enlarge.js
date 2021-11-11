@@ -122,3 +122,10 @@ slider.addEventListener('touchend', e => {
 function openSite(url){
     window.open(url, '_blank');
   }
+
+function scrollToGallery() {
+    let scroll = this.scrollY;
+    if (scroll == 0){
+        document.getElementById("filter-button-group").scrollIntoView({behavior: 'smooth', block: 'center'});
+    }
+}

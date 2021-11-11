@@ -6,11 +6,10 @@
   <meta name="description" content="Filter &amp; sort magical layouts">
     
   <title>Jan Rozman &#xB7; Portfolio</title>
-
-    <!-- Isotope does not require any CSS files -->
-    <link rel="stylesheet" href="css/isotope-docs.css?6" media="screen">
     <link rel="stylesheet" href="css/style.css" media="screen">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body class="page--filtering">
 
@@ -37,65 +36,60 @@
 
     <div class="container">
         <div class="portfolio-grid">
-          <div class="distortion"></div>
+          <div class="divider"></div>
           <div class="portfolio-info">
-            <div class="logo-icon-container">
-              <img src="img/icons/claritystLogo.png" class="logo-icon">
-            </div>  
-            <p>
+            <!-- <img src="img/icons/claritystLogo.png" class="logo-icon"> -->
+            <div class="intro-text">
               Hi my name is Jan
-            </p>
-            <p style="font-size: larger;">
+            </div>
+            <div class="welcome-text">
               WELCOME TO MY PERSONAL WEB PORFOLIO
-            </p>
-            <P>
-              What fuels me is capturing interesting moments that happen around us. Weather it is a one in a life time occasion or just common day to day stuff every moent can be made great and is in a way, worth keeping...
-            </P>
-            <p>
+            </div>
+            <div class="fuel-text">
+              What fuels me is capturing interesting moments that happen around us. Weather it is a one in a life time occasion or just common day to day stuff every moent can be made great and is in a way, worth keeping. Feel free to browse my personal web gallery.
+            </div>
+            <div class="equipment-header">
               EQUIPMENT:
-              Camera
-              - Canon eos r5
-              Strobes
-              - Quadralite ad600 pro
-              - Quadralite stroboss 60 basic
-              Lenses
-              - Canon ef 16-35mm f/2.8l usm ii
-              - Sigma art 50mm f/1.4
-              - Sigma 70-200mm f/2.8
-              Gimbal
-              - DJI RSC 2 gimbal
-              Tripod
-              - 2x Godox 260T 260cm Air
-              - Manfrotto MK290
-              Softbox
-              - Quadralite hexadecagon 90cm
-              - Aputure ligh dome mini II
-            </p>
-            <p>CONTACT:
-              Jan Rozman
-              +38641519414
-              Rozman.jan00@gmail.com
-            </p>
-            <div style="height: -webkit-fill-available; width: aut-webkit-fill-availableo; flex-direction: column; padding-top: 20px; display: flex;">
-              <div class="socialMediaFixed">
-                <img class="logo-sm" src="img/icons/iglogo.png" onclick="openSite('https://www.instagram.com/clarityst/')">
-                <img class="logo-sm" src="img/icons/fblogo.png" onclick="openSite('https://www.facebook.com/Clarityst-111557937087687/')">
-                <img class="logo-sm" src="img/icons/gmaillogo.png" onclick="openSite('mailto:Rozman.jan00@gmail.com')">
+            </div>
+            <div class="li-container">
+              <li>Camera - Canon eos r5</li>
+              <li>Strobes - Quadralite ad600 pro, Quadralite stroboss 60 basic</li>
+              <li>Lenses - Canon ef 16-35mm f/2.8l usm ii, Sigma art 50mm f/1.4, igma 70-200mm f/2.8</li>
+              <li>Gimbal - DJI RSC 2 gimbal</li>
+              <li>Tripod - 2x Godox 260T 260cm Air, Manfrotto MK290</li>
+              <li>Softbox - Quadralite hexadecagon 90cm, Aputure ligh dome mini II</li>
+            </div>
+            
+
+            <div class="sm-cont">
+              <div class="contact-container">
+                <div class="contact-header">
+                  CONTACT:
+                </div>
+                <div class="contact-text">
+                  <li>Tel: +38641519414</li>
+                  <li>Mail: Rozman.jan00@gmail.com</li>
+                </div>
               </div>
+              <img class="logo-sm" src="img/icons/iglogo.png" onclick="openSite('https://www.instagram.com/clarityst/')">
+              <img class="logo-sm" src="img/icons/fblogo.png" onclick="openSite('https://www.facebook.com/Clarityst-111557937087687/')">
+              <img class="logo-sm" src="img/icons/gmaillogo.png" onclick="openSite('mailto:Rozman.jan00@gmail.com')">
             </div>
           </div>
+          <div class="divider"></div>
+          <div class="distortion"></div>
+          <div class="divider"></div>
         </div>
 
 <div class="big-demo go-wide" data-js="filtering-demo">
-  <div class="filter-button-group button-group js-radio-button-group">
-    <button class="button is-checked" data-filter="*">-SHOW ALL-</button>
-    <button class="button" data-filter="null">-SHOW NONE-</button>
-    <button class="button" data-filter=".portraits">-PORTRAITS-</button>
-    <button class="button" data-filter=".food">-FOOD-</button>
-    <button class="button" data-filter=".music">-MUSIC-</button>
-    <button class="button" data-filter=".products">-PRODUCTS-</button>
-    <button class="button" data-filter=".realestate">-REALESTATE-</button>
-    <button class="button" data-filter=".video">-VIDEO-</button>
+  <div id="filter-button-group" class="filter-button-group button-group js-radio-button-group">
+    <button class="button is-checked" data-filter="*" onclick="scrollToGallery()">-SHOW ALL-</button>
+    <button class="button" data-filter=".portraits" onclick="scrollToGallery()">-PORTRAITS-</button>
+    <button class="button" data-filter=".food" onclick="scrollToGallery()">-FOOD-</button>
+    <button class="button" data-filter=".music" onclick="scrollToGallery()">-MUSIC-</button>
+    <button class="button" data-filter=".products" onclick="scrollToGallery()">-PRODUCTS-</button>
+    <button class="button" data-filter=".realestate" onclick="scrollToGallery()">-REALESTATE-</button>
+    <button class="button" data-filter=".video" onclick="scrollToGallery()">-VIDEO-</button>
   </div>
 
 
