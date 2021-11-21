@@ -175,6 +175,7 @@ li {
 .distortion {
   width: 52%;
   height: 90vh;
+  margin-bottom: 2%;
 }
 
 .logo-icon {
@@ -195,7 +196,7 @@ li {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2%;
+  gap: 4%;
   align-content: center;
   height: 10vh;
 }
@@ -258,7 +259,10 @@ li {
   overflow: hidden;
   outline: none;
   font-size: 1.1rem;
-  padding: 0.8rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
 }
 
 .button:hover {
@@ -306,71 +310,6 @@ li {
   margin: 0;
   padding: 0;
 }
-
-
-/* @media screen and ( max-width: 1460px ) {
-
-  .w3-modal{
-    position: fixed;
-    display: block;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.68);
-    z-index: 1;
-  }
-
-  .w3-modal-content{
-    padding: 0;
-    position: relative;
-    display: block;
-    height: 100%;
-    width: 100%;
-  }
-
-  .modal-img {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    transform: translateY(-50%);
-    height: auto;
-    left: 0;
-  }
-
-  .modal-nav-container {
-    display: none;
-  }
-
-  .distortion {
-    display: none;
-  }
-
-  .divider {
-    display: none;
-  }
-
-  .special {
-    display: block;
-  }
-
-  .portfolio-info {
-    font-size: 1.6rem;
-  }
-
-  .welcome-text {
-    font-size: 2.5rem;
-  }
-} */
-
-/* @media screen and ( max-width: 768px ) {
-
-  .portfolio-info {
-    font-size: 1.1rem;
-  }
-
-  .welcome-text {
-    font-size: 1.6rem;
-  }
-} */
 
 @media screen and ( max-width: 1380px ) {
   .w3-modal{
@@ -452,6 +391,11 @@ li {
   .narrow-element-item {
    min-width: 46%; 
   }
+
+  .filter-button-group {
+    height: auto;
+  }
+
 
   .button {
     padding: 0px;
