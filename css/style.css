@@ -299,7 +299,7 @@ li {
 }
 
 .narrow-element-item {
- min-width: 213px; 
+ min-width: 195px; 
 }
 
 .element-item:hover {
@@ -389,7 +389,7 @@ li {
   }
 
   .narrow-element-item {
-   min-width: 46%; 
+   min-width: 35%; 
   }
 
   .filter-button-group {
