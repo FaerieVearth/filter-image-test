@@ -1,10 +1,8 @@
 //Enlarges the image
 
-$(document).ready(function() {
-    var el = document.getElementById("grid");
-    el.style.visibility = "visible";
-    
-});
+window.onload = function () { 
+    document.getElementById("spin-overlay").style.display = "none";
+}
 
 let currentSelection;
 let VisibleBox;

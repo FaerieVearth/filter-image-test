@@ -37,6 +37,29 @@ body {
   background: var(--blackjr);
 }
 
+.spin-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--darkjr);
+  z-index: 1000;
+}
+
+.spinner {
+  width: 120px;
+  height: 120px;
+  -webkit-animation:spin 2s linear infinite;
+  -moz-animation:spin 2s linear infinite;
+  animation:spin 2s linear infinite;
+}
+@-moz-keyframes spin { 50% { -moz-transform: rotateY(90deg); } }
+@-webkit-keyframes spin { 50% { -webkit-transform: rotateY(90deg); } }
+@keyframes spin { 50% { -webkit-transform: rotateY(90deg); transform:rotateY(90deg); } }
+
 .main {
   background-color: var(--blackjr);
 }
