@@ -157,6 +157,11 @@ body {
   line-height: 2rem;
 }
 
+.tel-click {
+  pointer-events: none;
+  text-decoration: none;
+}
+
 .equipment-header {
   color: var(--bluejr);
   font-size: 1.4rem;
@@ -386,6 +391,11 @@ li {
 
   .fuel-text {
     max-width: 818px;
+  }
+
+  .tel-click {
+    pointer-events: visible;
+    text-decoration: visible;
   }
 
   .narrow-element-item {
