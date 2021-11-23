@@ -1,7 +1,14 @@
 //Enlarges the image
 
 window.onload = function () { 
-    document.getElementById("spin-overlay").style.display = "none";
+    let overlay = document.getElementById("spin-overlay");
+    overlay.style.visibility = "hiddem";
+    overlay.style.opacity = "0";
+    overlay.style.transition = "visibility 0s 0.4s, opacity 0.4s linear";
+
+    setTimeout(function(){ 
+        overlay.style.display = "none";
+    }, 1000);
 }
 
 let currentSelection;
