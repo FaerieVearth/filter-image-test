@@ -1,8 +1,8 @@
 new hoverEffect({
     parent: document.querySelector('.distortion'),
     intesity: 0.3,
-    image1: './img/janrozman1.jpg',
-    image2: './img/janrozman2.jpg',
+    image1: 'https://live.staticflickr.com/65535/51761786269_a8c3419448_k.jpg',
+    image2: 'https://live.staticflickr.com/65535/51761375468_c8d2dafb3c_k.jpg',
     speedIn: 0.8,
     speedOut: 1,
     angle: Math.PI / 8,
